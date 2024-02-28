@@ -1,15 +1,39 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Contact from "../components/Contact.astro";
+import "@fontsource/public-sans";
 ---
 
 <Layout title="Hi, I'm Yvonne.">
 	<main>
 		<h2>Hi, I'm <span class="text-gradient">Yvonne Hou!</span>👋</h2>
+
+		<img
+			alt="Avator"
+			src="/assets/avator.jpg"
+			class="avator"
+			width="240";
+			height="240";
+		/>
+
+		<p class="font-size-big">Undergraduate Student</p>
+		<p class="font-size-big">Data Science</p>
+		
+		<div class="about">
+			<p class="font-size-mini">Welcome to my personal page!</p>
+			<p class="font-size-mini">A simple website built using the Astro framework, hope you like it!"</p>
+		</div>
+
+		<Contact></Contact>
+
 		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+			To get started, open the directory <code>src/pages</code> in your project.<br
+			/>
+			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message
+			above.
 		</p>
+
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="https://docs.astro.build/"
@@ -62,11 +86,27 @@ import Card from '../components/Card.astro';
 		margin-bottom: 1em;
 	}
 	h2 {
+		font-size: 2.5rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.font-size-big {
 		font-size: 3rem;
 		font-weight: 700;
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 1em;
+	}
+	.font-size-mini {
+		font-size: 1rem;
+		line-height: 1;
+		text-align: center;
+		margin: 1em;
+	}
+	.about {
+		padding: 0.8rem;
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
@@ -78,7 +118,10 @@ import Card from '../components/Card.astro';
 	.instructions {
 		margin-bottom: 2rem;
 		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		background: linear-gradient(
+			rgba(var(--accent-dark), 66%),
+			rgba(var(--accent-dark), 33%)
+		);
 		padding: 1.5rem;
 		border-radius: 8px;
 	}
@@ -98,5 +141,9 @@ import Card from '../components/Card.astro';
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 2rem;
 		padding: 0;
+	}
+	.avator {
+		display: block;
+		margin: 0 auto;
 	}
 </style>
