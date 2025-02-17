@@ -7,18 +7,19 @@ import "@fontsource/public-sans";
 
 <Layout title="Hi, I'm Yvonne.">
 	<main>
-		<h2>Hi, I'm <span class="text-gradient">Yvonne Hou!</span>👋</h2>
+		<h2>Hi, I'm <span class="text-gradient">Yvonne Hou!</span>👋🩵</h2>
 
 		<img
 			alt="Avator"
-			src="/assets/avator.jpg"
+			src="/assets/trgwtgtr.jpg"
 			class="avator"
 			width="240";
 			height="240";
+			style="border-radius: 50%; object-fit: cover;"
 		/>
 
 		<p class="font-size-big">Undergraduate Student</p>
-		<p class="font-size-big">Data Science</p>
+		<p class="font-size-big-colour">Data Science</p>
 		
 		<div class="about">
 			<p class="font-size-mini">Welcome to my personal page!</p>
@@ -27,13 +28,16 @@ import "@fontsource/public-sans";
 
 		<Contact></Contact>
 
+		
 		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br
+			<!-- To get started, open the directory <code>src/pages</code> in your project.<br
 			/>
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message
-			above.
+			above. -->
+			Still thinking about the content... 
 		</p>
 
+		<!--
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="https://docs.astro.build/"
@@ -56,6 +60,7 @@ import "@fontsource/public-sans";
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
+	-->
 	</main>
 </Layout>
 
@@ -99,6 +104,14 @@ import "@fontsource/public-sans";
 		text-align: center;
 		margin-bottom: 1em;
 	}
+	.font-size-big-colour {
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+		color: rgb(154, 197, 244)
+	}
 	.font-size-mini {
 		font-size: 1rem;
 		line-height: 1;
@@ -124,6 +137,7 @@ import "@fontsource/public-sans";
 		);
 		padding: 1.5rem;
 		border-radius: 8px;
+		color: white
 	}
 	.instructions code {
 		font-size: 0.8em;
