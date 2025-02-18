@@ -1,4 +1,5 @@
 # Portfolio
+<!-- 
 > Developed with passion while listening to _Hurry Up Tomorrow by The Weeknd_. Completed in just 3 days.
 ![OscarHernandez-portfolio](https://github.com/user-attachments/assets/e284a42b-15c5-495c-99c7-ad5c1eb3bbe7)
 [![Deploy Status](https://img.shields.io/badge/Deploy-Vercel-black?style=flat&logo=vercel)](tu-url-deploy)
@@ -33,7 +34,7 @@ The component `<LetterGlitch \>` was taken from [ReactBits.dev](https://www.reac
 ```
 4. Insert the embed code on footer.astro
 
-That's it!
+That's it! -->
 
 ## **Project structure**
 ```
@@ -46,7 +47,7 @@ src/
 └── pages/
 ```
 
-## **Local configuration** 
+<!-- ## **Local configuration** 
 1. Clone the repo:  
 ```
 git clone https://github.com/gothsec/portfolio
@@ -55,12 +56,12 @@ git clone https://github.com/gothsec/portfolio
 ```  
 npm install
 ```
-3. Start the develpoment server:
+3. Start the develpoment server: -->
 ```  
 npm run dev
 ```
 
-> **Important Notice:**  
+<!-- > **Important Notice:**  
 > This project is licensed under the [MIT License](https://opensource.org/licenses/mit).  
 > According to the license terms, any redistribution (including compiled or modified versions), you **must** retain the original copyright 
-> notice and the full license text. Copyright © 2025 Oscar Hernandez. All rights reserved.
+> notice and the full license text. Copyright © 2025 Oscar Hernandez. All rights reserved. -->
